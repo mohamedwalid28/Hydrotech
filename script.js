@@ -34,7 +34,7 @@
                     // Decrease the text
                     textElement.textContent = fullText.slice(0, index);
                     index--;
-                    if (index < 0) {
+                    if (index <= 1) {
                         decreasing = false;
                         index = 1; // Reset to 1 after reaching the beginning
                     }
