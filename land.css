@@ -17,9 +17,11 @@ ul {
     background-color: #FFF;
     padding-top: -10%;
 }
+
 .containerfooter {
     /* padding: 0; */
     margin: 0 auto;
+    width: 100%;
     background-color: #F4F4F4;
     padding-top: -10%;
 }
@@ -89,14 +91,16 @@ header ul li a {
 
 .greenDiv {
     background-color: #5DA94C;
-    height: auto; /* Adjust height to fit content */
+    height: auto;
+    /* Adjust height to fit content */
     width: 900px;
     padding: 10px;
     border-radius: 60px;
     color: #fff;
     display: flex;
     align-items: center;
-    position: relative; /* For absolute positioning of the circle */
+    position: relative;
+    /* For absolute positioning of the circle */
     margin: 0 auto;
     font-size: 18px;
 }
@@ -107,20 +111,24 @@ header ul li a {
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
-    left: 60px; /* 60px from the left side of .greenDiv */
-    top: 50%; /* Center vertically */
+    left: 60px;
+    /* 60px from the left side of .greenDiv */
+    top: 50%;
+    /* Center vertically */
     transform: translateY(-50%);
 }
 
 .circle img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the image covers the circle */
+    object-fit: cover;
+    /* Ensure the image covers the circle */
 }
 
 .content {
     flex: 1;
-    padding-left: 220px; /* Adjust padding to prevent text overlap with the image */
+    padding-left: 220px;
+    /* Adjust padding to prevent text overlap with the image */
     text-align: center;
 }
 
@@ -128,7 +136,8 @@ header ul li a {
     background-color: #5DA94C;
     color: black;
     border-radius: 40px;
-    padding: 5px; /* Added padding for better spacing */
+    padding: 5px;
+    /* Added padding for better spacing */
     display: inline-block;
     margin-top: 10px;
 }
@@ -141,8 +150,10 @@ header ul li a {
     display: inline-block;
     font-weight: bold;
     font-size: 14px;
-    margin-left: auto; /* Push the button to the right */
-    padding: 10px 20px; /* Added padding for better button size */
+    margin-left: auto;
+    /* Push the button to the right */
+    padding: 10px 20px;
+    /* Added padding for better button size */
 }
 
 .greenDiv .btn1:hover {
@@ -176,21 +187,30 @@ h4 {
 }
 
 /* Div Styles */
-.div1, .div2, .div3, .div4 {
+.div1,
+.div2,
+.div3,
+.div4 {
     width: 550px;
     height: 300px;
     padding: 10px;
     border: 1px solid #5DA94C;
     border-radius: 56px;
     margin: 10px;
-    justify-content: space-between;    
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    text-align: center; /* Center text within the flex container */
-    
+    justify-content: space-between;
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+    text-align: center;
+    /* Center text within the flex container */
+
 }
 
-.div1:hover, .div2:hover, .div3:hover, .div4:hover {
+.div1:hover,
+.div2:hover,
+.div3:hover,
+.div4:hover {
     background-color: #5DA94C;
     cursor: pointer;
 }
@@ -203,11 +223,13 @@ h4 {
     padding: 3px;
     border-radius: 50px;
     border: none;
-    margin: 0 auto; /* Center the button */
+    margin: 0 auto;
+    /* Center the button */
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .readmore:hover {
     background-color: #fff;
     color: #5DA94C;
@@ -237,11 +259,12 @@ h4 {
 }
 
 .text-container {
-    
+
     margin-left: 0%;
 }
 
-h1, h2 {
+h1,
+h2 {
     margin-bottom: 10px;
     justify-content: space-between;
     align-items: center;
@@ -249,6 +272,7 @@ h1, h2 {
 
 .ptwo {
     font-size: large;
+    width: 90%;
     opacity: 1;
     color: #000000;
 }
@@ -265,47 +289,80 @@ h1, h2 {
 .footer {
     background-color: #F4F4F4;
     padding: 20px;
+    width: 100%;
+    /* Ensure footer takes full width */
+    box-sizing: border-box;
+    /* Include padding in width calculation */
 }
 
-.footer .container {
-    max-width: 960px;
+.footer .containerfooter {
+    max-width: 100%;
+    /* Ensure container takes full width */
     margin: 0 auto;
     background-color: #F4F4F4;
-
+    padding: 0 20px;
+    /* Add padding for better spacing on mobile */
+    box-sizing: border-box;
+    /* Include padding in width calculation */
 }
 
 .row {
     display: flex;
+    flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    /* Ensure row takes full width */
 }
 
 .col {
     flex: 1;
-    padding: 0 20px;
+    padding: 0 18px;
+    box-sizing: border-box;
+    /* Include padding in width calculation */
+    min-width: 200px;
+    /* Set a minimum width for columns */
+    margin-bottom: 20px;
+    /* Add margin for spacing on smaller screens */
 }
 
+.col iframe {
+    width: 100%;
+    /* Ensure iframe takes full width of its container */
+    height: auto;
+    /* Allow height to adjust */
+}
+
+.imgfot {
+    width: 100px;
+    height: auto;
+    /* Allow height to adjust */
+    padding: 5px;
+    margin: 5px;
+}
 
 .Clients {
     text-align: center;
     font-size: 26px;
-    display: flex; /* Enable flexbox layout */
-    width: 100%; /* Ensure container takes full width */
+    display: flex;
+    /* Enable flexbox layout */
+    width: 100%;
+    /* Ensure container takes full width */
     padding-left: 49%;
 }
 
-.client1, .client2, .client3 {
-    width: calc(33% - 20px); /* 33.33% minus margins */
+.client1,
+.client2,
+.client3 {
+    width: calc(33% - 20px);
+    /* 33.33% minus margins */
     height: 400px;
     padding: 10px;
-    margin: 10px; /* Maintain equal margins between elements */
-    box-sizing: border-box; /* Include padding and border in width calculation */
-}
-.imgfot {
-    width: 100px;
-    height: 200px;
-    padding: 5px;
-    margin: 5px;
+    margin: 10px;
+    /* Maintain equal margins between elements */
+    box-sizing: border-box;
+    /* Include padding and border in width calculation */
 }
 
 
@@ -315,124 +372,175 @@ h1, h2 {
 }
 
 @keyframes blink {
-    from, to {
+
+    from,
+    to {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
 }
-/* Mobile Styles */
-@media screen and (max-width: 768px) {
+
+/* Media Queries for Responsive Design */
+/* Existing CSS remains the same until the media queries */
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
     header .container {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
     }
 
     header ul {
-        margin-top: 10px;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     header ul li {
-        margin: 10px 0;
-    }
-
-    .hero img {
-        width: 100%;
-        height: auto;
+        margin-top: 0;
+        font-size: 14px;
+        /* Smaller text size */
     }
 
     .greenDiv {
-        flex-direction: column;
-        text-align: center;
-        padding: 15px;
-    }
-
-    .greenDiv .circle {
-        position: relative;
-        margin-bottom: 20px;
-    }
-
-    .content {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    #countdown {
-        display: block;
-        margin-top: 10px;
-    }
-
-    .greenDiv .btn1 {
         width: 100%;
-        margin-top: 10px;
+        padding: 10px;
+        font-size: 16px;
+        /* Smaller text size */
     }
 
-    .container2 {
-        display: block;
-        padding: 0;
-    }
-
-    .container2 .div1, .container2 .div2, .container2 .div3, .container2 .div4 {
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-
-    .readmore {
-        width: 150px;
-        margin: 10px auto;
-    }
-
-    .onepic.Mopic {
-        width: 100%;
-        margin-left: 0;
+    .circle {
+        width: 80px;
+        height: 80px;
+        left: 10px;
     }
 
     .Clients {
         text-align: center;
-        font-size: 22px;
+        font-size: 26px;
+        display: flex;
+        /* Enable flexbox layout */
+        width: 100vw;
+        /* Ensure container takes full width */
+        padding-left: 49%;
     }
 
-    .client1, .client2, .client3 {
+    .client1,
+    .client2,
+    .client3 {
+        width: calc(33% + 35px);
+        /* 33.33% minus margins */
+        height: 400px;
+        padding: 10px;
+        margin: 10px;
+        /* Maintain equal margins between elements */
+        box-sizing: border-box;
+        /* Include padding and border in width calculation */
+    }
+
+    .content {
+        padding-left: 0;
+    }
+
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div1,
+    .div2,
+    .div3,
+    .div4 {
         width: 100%;
-        height: auto;
-        margin: 10px 0;
+        max-width: 300px;
     }
 
-    .footer .container {
-        display: block;
-        padding: 0;
+    .container4 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .onepic.Mopic {
+        margin-left: 0;
     }
 
     .footer .row {
-        display: block;
-        text-align: center;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .footer .col {
-        padding: 10px;
-        margin-bottom: 10px;
+    .col {
+        flex: 1;
+        padding: 0;
+        margin-bottom: 20px;
     }
 
-    .footer iframe {
-        width: 100%;
-        height: 200px;
+    /* Remove the Google Map */
+    .col iframe {
+        display: none;
+    }
+
+    .map-col iframe {
+        display: none;
     }
 }
 
-/* Small Mobile Styles (max-width: 480px) */
-@media screen and (max-width: 480px) {
-    .containerfooter {
-        padding: 20px 10px;
+@media (max-width: 480px) {
+    header .lo span {
+        font-size: 14px;
+        /* Smaller text size */
     }
 
-    .footer .col {
-        padding: 10px;
+    header ul li {
+        font-size: 12px;
+        /* Smaller text size */
     }
 
-    .footer .container {
-        padding: 10px;
+    .greenDiv {
+        font-size: 14px;
+        /* Smaller text size */
+    }
+
+    .circle {
+        width: 60px;
+        height: 60px;
+    }
+
+    .container3 {
+        font-size: 1.2em;
+        /* Smaller text size */
+    }
+
+    .readmore {
+        width: 80px;
+        height: 40px;
+        font-size: 12px;
+        /* Smaller text size */
+    }
+
+    .container2 .logo1,
+    .container2 .logo2,
+    .container2 .logo3,
+    .container2 .logo4 {
+        width: 60px;
+        height: 60px;
+    }
+
+    .ptwo {
+        font-size: small;
+        /* Smaller text size */
+    }
+
+    .Clients {
+        font-size: 18px;
+        /* Smaller text size */
+    }
+
+    .imgfot {
+        width: 60px;
+        /* Smaller image size */
+        height: 60px;
     }
 }
